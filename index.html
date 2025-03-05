@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hardik Rathod</title>
+
+    <!--
+    - favicon
+  -->
+
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=work_history"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my.png"
+              alt="Richard hanrick"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Hardik Rathod</h1>
+
+            <p class="title">Full-Stack Web Developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="hardikrathod9899@gmail.com" class="contact-link"
+                  >hardikrathod9899@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+6353123475" class="contact-link"
+                  >+91-6353123475</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="2002-09-05">Sep 5, 2002</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Rajkot-Gujrat</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/hardik-rathod-2a025b269/"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://x.com/RathodHard22933"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://github.com/HARDIK-RATHOD-9899"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Github-Stats</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Having completed a Bachelor's in Computer Applications, he has a
+              passion for web development. As a responsible and detail-oriented
+              individual, he is eager to grow in the field of front-end and
+              full-stack development.
+            </p>
+            <p>
+              With experience in various web technologies, he is capable of
+              creating attractive, functional, and responsive websites. He looks
+              forward to his first professional work experience, where he can
+              apply his skills in real-world projects. His goal is to contribute
+              to innovative solutions, enhance his development skills, and
+              continue growing as an aspiring full-stack developer.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <!-- <ion-icon name="book-outline"></ion-icon> -->
+                <span class="material-symbols-outlined"> work_history </span>
+              </div>
+
+              <h3 class="h3">EXPERIENCE</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">TechMind IT Academy</h4>
+
+                <span
+                  >Full-Stack Developer/Tutor (November 2024 - January
+                  2025)</span
+                >
+
+                <p class="timeline-text">
+                  Developed and maintained full-stack
+                  applications, ensuring high performance and scalability.
+                  Provided client support by troubleshooting issues and
+                  delivering optimized solutions. Instructed students on
+                  full-stack development concepts and technologies through
+                  hands-on projects. Assisted in curriculum development and
+                  mentored students to build industry-ready skills.
+                </p>
+              </li>
+            </ol>
+          </section>
+          <button class="download-button" onclick="downloadresume()">
+            Download Resume
+          </button>
+          <br />
+          <section class="service">
+            <h3 class="h3 service-title">Service</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web Development</h4>
+
+                  <p class="service-item-text">
+                    Web development involves creating and maintaining websites,
+                    including both front-end design and back-end functionality.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Front-end development</h4>
+                  <p class="service-item-text">
+                    Front-end development builds the visual and interactive
+                    parts of websites using HTML, CSS, and JavaScript.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Back-end development</h4>
+                  <p class="service-item-text">
+                    Web development encompasses both front-end design and
+                    back-end functionality to create and maintain websites and
+                    web applications.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </section>
+          </div>
+
+          <!--
+          - clients
+        --></article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Red & white multimedia education
+                </h4>
+
+                <span>2023-2024</span>
+
+                <p class="timeline-text">
+                  A full-stack web developer is a professional skilled in
+                  building both front-end and back-end components of web
+                  applications.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Sanskar College</h4>
+
+                <span>2020-2023</span>
+
+                <p class="timeline-text">
+                  Completed a Bachelor of Computer Applications (B.C.A) degree,
+                  gaining foundational knowledge in computer programming,
+                  software development, and IT systems.
+                </p>
+              </li>
+            </ol>
+          </section>
+          <section class="clients">
+            <h3 class="clients-title">Tech Stack</h3>
+            <!-- <div class="scroll-arrow scroll-left">←</div> -->
+            <!-- <div class="scroll-arrow scroll-right">→</div> -->
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img src="https://img.icons8.com/color/144/html-5--v1.png" alt="html-5--v1" />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img src="https://img.icons8.com/color/144/css3.png" alt="css3" />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img src="https://img.icons8.com/color/144/javascript--v1.png" alt="javascript--v1" />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img src="https://img.icons8.com/officel/144/react.png" alt="react" />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img src="https://img.icons8.com/fluency/144/node-js.png" alt="node-js" />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img src="https://img.icons8.com/color/144/mongodb.png" alt="mongodb" />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="projects">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
+              </li>
+
+              <!-- <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li> -->
+
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+
+                <!-- <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li> -->
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <a
+                    href="https://firebase-crud-snowy.vercel.app/"
+                    target="_blank"
+                  >
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                      <img
+                        src="./assets/images/Admin.png"
+                        alt="finance"
+                        loading="lazy"
+                      />
+                    </figure>
+                  </a>
+                  <h3 class="project-title">
+                    <div style="display: flex; justify-content: space-evenly">
+                      <a
+                        href="https://github.com/HARDIK-RATHOD-9899/firebase-crud"
+                        target="_blank"
+                      >
+                        <ion-icon id="clr" name="logo-github"></ion-icon>
+                      </a>
+                      <a
+                        href="https://firebase-crud-snowy.vercel.app/"
+                        target="_blank"
+                      >
+                        <ion-icon id="clr" name="eye-outline"></ion-icon>
+                      </a>
+                    </div>
+
+                    Admin
+                  </h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <a href="https://kfc-clone-sigma.vercel.app/" target="_blank">
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                      <img
+                        src="./assets/images/kfc.png"
+                        alt="orizon"
+                        loading="lazy"
+                      />
+                    </figure>
+                  </a>
+
+                  <h3 class="project-title">
+                    <div style="display: flex; justify-content: space-evenly">
+                      <a
+                        href="https://github.com/HARDIK-RATHOD-9899/KFC-CLONE"
+                        target="_blank"
+                      >
+                        <ion-icon id="clr" name="logo-github"></ion-icon>
+                      </a>
+                      <a
+                        href="https://kfc-clone-sigma.vercel.app/"
+                        target="_blank"
+                      >
+                        <ion-icon id="clr" name="eye-outline"></ion-icon>
+                      </a>
+                    </div>
+
+                    KFC
+                  </h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <a
+                    href="https://bootstrap-website-gray.vercel.app/index.html"
+                    target="_blank"
+                  >
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                      <img
+                        src="./assets/images/Bootstrap.png"
+                        alt="fundo"
+                        loading="lazy"
+                      />
+                    </figure>
+                  </a>
+
+                  <h3 class="project-title">
+                    <div style="display: flex; justify-content: space-evenly">
+                      <a
+                        href="https://github.com/HARDIK-RATHOD-9899/BOOTSTRAP-WEBSITE"
+                        target="_blank"
+                      >
+                        <ion-icon id="clr" name="logo-github"></ion-icon>
+                      </a>
+                      <a
+                        href="https://bootstrap-website-gray.vercel.app/"
+                        target="_blank"
+                      >
+                        <ion-icon id="clr" name="eye-outline"></ion-icon>
+                      </a>
+                    </div>
+
+                    Aroma
+                  </h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <a
+                    href="https://ajio-clone-green.vercel.app/"
+                    target="_blank"
+                  >
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+
+                      <img
+                        src="./assets/images/Ajio.png"
+                        alt="dsm."
+                        loading="lazy"
+                      />
+                    </figure>
+                  </a>
+                  <h3 class="project-title">
+                    <div style="display: flex; justify-content: space-evenly">
+                      <a
+                        href="https://github.com/HARDIK-RATHOD-9899/Ajio-Clone"
+                        target="_blank"
+                      >
+                        <ion-icon id="clr" name="logo-github"></ion-icon>
+                      </a>
+                      <a
+                        href="https://ajio-clone-ly6xwp8qb-rathod-hardiks-projects.vercel.app/"
+                        target="_blank"
+                      >
+                        <ion-icon id="clr" name="eye-outline"></ion-icon>
+                      </a>
+                    </div>
+
+                    Ajio
+                  </h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #BLOG
+      -->
+        <article class="portfolio" data-page="github-stats">
+          <header>
+            <h2 class="h2 article-title">Github Stats</h2>
+          </header>
+
+          <div class="stats-container">
+            <img
+              id="github-streak-stats"
+              class="imgs"
+              src="https://github-readme-streak-stats.herokuapp.com/?user=HARDIK-RATHOD-9899&theme=transparent"
+              alt="GitHub Streak Stats"
+            />
+
+            <div class="calendar">Loading the data just for you.</div>
+
+            <img
+              id="github-stats-card"
+              class="imgs"
+              src="https://github-readme-stats.vercel.app/api?username=HARDIK-RATHOD-9899&theme=transparent&show_icons=true&locale=en"
+              alt="GitHub Stats Card"
+            />
+          </div>
+        </article>
+
+        <script>
+          GitHubCalendar(".calendar", "HARDIK-RATHOD-9899");
+          GitHubCalendar(".calendar", "HARDIK-RATHOD-9899", {
+            responsive: true,
+          });
+        </script>
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118147.82106509342!2d70.73889454332055!3d22.27346616669257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c98ac71cdf0f%3A0x76dd15cfbe93ad3b!2sRajkot%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1728373844691!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <!-- <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe> -->
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="#" class="form" id="contactForm">
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  id="Name"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                id="message"
+                placeholder="Your Message"
+              ></textarea>
+
+              <button class="form-btn" type="submit" id="submitBtn">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets//js/form.js"></script>
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
